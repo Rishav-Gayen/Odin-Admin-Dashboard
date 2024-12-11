@@ -8,38 +8,57 @@ body {
     font-family: 'Roboto';
     display: grid;
     grid-template-columns: 1fr 5fr;
+    
 }
 
 .sidebar {
-    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px;
     height: 100vh;
-    background-color: #3f83d2;
+    background-color: #1992d4;
     color: #fff;
 }
 
-.sidebar-title, .sidebar-home, .sidebar-profile, .sidebar-messages, .sidebar-history, .sidebar-tasks, .sidebar-communities, .sidebar-settings, .sidebar-support, .sidebar-privacy {
+.sidebar-link {
     display: flex;
+    gap: 15px;
     align-items: center;
-    gap: 20px;
-    margin-bottom: 16px;
     font-size: 12px;
-    font-weight: 200;
-    letter-spacing: 1.2px;
 }
 
-.sidebar-title {
+.sidebar-icon {
+    font-size: 20px;
+}
+
+.mdi-view-dashboard {
+    font-size: 44px;
+}
+
+.sidebar-heading, .sidebar-space {
+    margin-bottom: 30px;
+}
+
+.sidebar-heading {
     font-size: 18px;
+    font-weight: 200;
 }
 
 
-.sidebar-title, .sidebar-communities {
-    margin-bottom: 60px;
+
+.dashboard-homebar {
+    display: flex;
+    border: 2px solid black;
+    width: 100%;
 }
 
-.sidebar i {
-    font-size: 22px;
+.dashboard-homebar > * {
+    border: 2px solid black;
 }
 
-.bi-windows {
-    font-size: 24px;
+img {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
 }
